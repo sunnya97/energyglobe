@@ -18,6 +18,8 @@ with open('3letter.csv', mode='r') as infile:
 
 output_list = []
 
+year = "2005"
+
 counter = 1
 
 for country in threeletters:
@@ -26,7 +28,7 @@ for country in threeletters:
 
     print(country, exporter, counter)
 
-    url = 'http://atlas.media.mit.edu/hs92/export/2010/' +exporter+ '/show/2709/'
+    url = 'http://atlas.media.mit.edu/hs92/export/' + year + '/' +exporter+ '/show/2709/'
 
     r = requests.get(url)
     parsed_json = r.json()["data"]
@@ -38,13 +40,13 @@ for country in threeletters:
 
     print(len(output_list))
 
-    counter =+ 1
+    counter += 1
 
-final_json = '[{"data": ' + str(output_list) + ', "t": 2010}'
+final_json = '[{"data": ' + str(output_list) + ', "t": ' + year + '}'
 
 print(final_json)
 
-text_file = open("Output.txt", "w")
+text_file = open("Output" year +".txt", "w")
 
 text_file.write(final_json)
 
