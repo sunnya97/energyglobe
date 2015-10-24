@@ -46,7 +46,7 @@ final_json = '[{"data": ' + str(output_list) + ', "t": ' + year + '}'
 
 print(final_json)
 
-text_file = open("Output" year +".txt", "w")
+text_file = open("Output" +year +".txt", "w")
 
 text_file.write(final_json)
 
