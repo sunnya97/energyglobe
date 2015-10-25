@@ -18,7 +18,7 @@ with open('3letter.csv', mode='r') as infile:
 
 output_list = []
 
-year = "2005"
+year = "2013"
 
 counter = 1
 
