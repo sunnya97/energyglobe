@@ -57,7 +57,7 @@ var selectableCountries = [];
 //	now they are just strings of categories
 //	Category Name : Category Code
 var weaponLookup = {
-	'Military Weapons' 		: 'mil',
+	'Crude Oil' 		: 'mil',
 	'Civilian Weapons'		: 'civ',
 	'Ammunition'			: 'ammo',
 };
@@ -292,7 +292,7 @@ function initScene() {
 
 	buildGUI();
 
-	selectVisualization( timeBins, '2010', ['UNITED STATES'], ['Military Weapons','Civilian Weapons', 'Ammunition'], ['Military Weapons','Civilian Weapons', 'Ammunition'] );					
+	selectVisualization( timeBins, '2010', ['UNITED STATES'], ['Crude Oil','Civilian Weapons', 'Ammunition'], ['Crude Oil','Civilian Weapons', 'Ammunition'] );					
 
 		// test for highlighting specific countries
 	// highlightCountry( ["United States", "Switzerland", "China"] );

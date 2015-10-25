@@ -276,7 +276,7 @@ Bar graph on left
     position: absolute;
     /*bottom:10px;*/
     left:-7px;
-    opacity: 0.9;
+    opacity: 0;
 }
 #barGraph .import.ammo {
 	fill: 					#44B2D4;
